@@ -1,0 +1,44 @@
+@import "Variables.scss";
+.navbar {
+  &_items {
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+  &_item {
+    @media (max-width: 800px) {
+      margin-bottom: 50px;
+    }
+  }
+  &_nav {
+    display: flex;
+    list-style: none;
+    @media (max-width: 800px) {
+      display: block;
+      margin-top: 100px;
+      padding-left: 30%;
+      list-style: none;
+    }
+  }
+  &_link {
+    margin-left: 25px;
+    position: relative;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: $White;
+    @media (max-width: 800px) {
+      margin: 0;
+      position: relative;
+      margin-top: 30px;
+      font-size: 19px;
+      font-weight: bold;
+      text-decoration: none;
+      color: $Dark-blue;
+    }
+  }
+  &_link:hover {
+    text-decoration: underline;
+    text-decoration-color: $Dark-red;
+  }
+}

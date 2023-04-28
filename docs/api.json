@@ -1,0 +1,32 @@
+[
+    {
+        "price":0,
+        "id":1,
+        "title":"pantalon",
+        "url":"https://store.steampowered.com/app/1817230/HiFi_RUSH?snr=1_category_4_arcaderhythm_201"
+    },
+    {
+        "price":60,
+        "id":2,
+        "title":"camisa",
+        "url":"https://store.steampowered.com/app/1817230/HiFi_RUSH?snr=1_category_4_arcaderhythm_201"
+    },
+    {
+        "price":30,
+        "id":3,
+        "title":"camisa",
+        "url":"https://store.steampowered.com/app/1817230/HiFi_RUSH?snr=1_category_4_arcaderhythm_201"
+    },
+    {
+        "price":50,
+        "id":4,
+        "title":"remera",
+        "url":"https://store.steampowered.com/app/1817230/HiFi_RUSH?snr=1_category_4_arcaderhythm_201"
+    },
+    {
+        "price":90,
+        "id":5,
+        "title":"guantes",
+        "url":"https://store.steampowered.com/app/1817230/HiFi_RUSH?snr=1_category_4_arcaderhythm_201"
+    }
+]

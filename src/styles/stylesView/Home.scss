@@ -1,0 +1,17 @@
+@import 'src/styles/Variables.scss';
+ .home {
+ position: relative;
+ color: rgb(255, 255, 255);
+ background-color: $Dark-blue;
+}
+.cards-container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+   padding: 10px;
+   }
+ @media (min-width: 800px) {
+  .cards-container{ 
+   grid-template-columns: repeat(3, 1fr);
+   }
+ }

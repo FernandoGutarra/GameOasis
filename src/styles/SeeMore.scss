@@ -1,0 +1,37 @@
+@import "Variables.scss";
+.selectedProduct {
+  &_title {
+    font-weight: normal;
+    font-size: 19px;
+    padding: 20px;
+    padding-bottom: 25px;
+  }
+  &_img {
+    width: 100%;
+  }
+  &_price {
+    font-weight: bold;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+  }
+  &_btn_buy {
+    height: 50px;
+    width: 90%;
+    border-radius: 25px 25px 25px 25px;
+    background-color: $Dark-blue;
+    color: $White;
+    border: none;
+    padding: 5px 10px;
+    margin: 10px;
+  }
+  &_talla {
+    border: 1px solid $Dark-blue;
+    margin: 20px;
+    padding: 40px 0px 40px 20px;
+  }
+  @media (min-width: 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

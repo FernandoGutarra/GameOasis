@@ -1,0 +1,61 @@
+@import "Variables.scss";
+.footer-nav {
+  position: relative;
+  clear: both;
+  background-color: $White;
+  color: $Dark-blue;
+  font-size: 12px;
+  left: 0;
+  padding-top: 20px;
+}
+.container-colums {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .colum {
+    &_1,
+    &_2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+    }
+
+    &_1 {
+      .info {
+        font-weight: bold;
+        margin-left: 40px;
+        &_minor {
+          margin-left: 40px;
+          margin-bottom: 10px;
+          font-size: 11px;
+        }
+      }
+    }
+    &_2 {
+      .info {
+        font-weight: bold;
+        margin-left: 20px;
+        &_minor {
+          font-size: 11px;
+          margin-left: 20px;
+        }
+      }
+      .redes {
+        display: inline-block;
+        // margin-bottom: 0px;
+      }
+      .iconos {
+        margin-left: 17px;
+      }
+    }
+  }
+}
+.copy {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  clear: both;
+}
+.info:hover {
+  color: $Dark-red;
+}

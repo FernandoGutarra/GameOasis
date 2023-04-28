@@ -1,0 +1,116 @@
+@import "Variables.scss";
+.header {
+  position: relative;
+  background-color: $Dark-blue;
+  text-decoration: none;
+  border-bottom: 3px solid $White;
+  padding: 10px;
+  .container {
+    margin: 7px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+    }
+    .item {
+      &_1 {
+        grid-column: 1 / span 1;
+      }
+      &_2 {
+        grid-column: 2 / span 3;
+      }
+      @media (max-width: 800px) {
+        &_1 {
+          grid-column: 1 / span 2;
+        }
+        &_3 {
+          grid-column: 3 / span 1;
+        }
+      }
+    }
+  }
+  .menu_container {
+    position: static;
+    margin-top: 7px;
+    @media (max-width: 800px) {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      left: -70%;
+      width: 70%;
+      height: 100%;
+      background-color: $White;
+      transition: left 0.5s ease-out;
+      z-index: 100;
+    }
+  }
+}
+
+.activenavbar {
+  .menu_container {
+    box-shadow: 100px 10px 1000px rgba(0, 0, 0, 0.5);
+    left: 0;
+  }
+  .navbar {
+    &_items {
+      display: block;
+    }
+    &_nav {
+      display: block;
+    }
+  }
+}
+.navbar_brand {
+  position: relative;
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: none;
+  color: $Brigh-yellow;
+
+  @media (max-width: 800px) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+    color: $White;
+  }
+}
+.bars__menu {
+  width: 20px;
+  float: right;
+  margin-right: 5px;
+  padding-top: 8.4px;
+  cursor: pointer;
+  span {
+    display: block;
+    height: 2px;
+    background: $White;
+    margin-top: 4px;
+    transform-origin: 0px 100%;
+    transition: all 600ms;
+
+    &.activeline1__bars__menu {
+      transform: rotate(45deg) translate(-2px, 1px);
+    }
+
+    &.activeline2__bars__menu {
+      opacity: 0;
+    }
+
+    &.activeline3__bars__menu {
+      transform: rotate(-45deg) translate(-2px, 0px);
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .bars__menu {
+    display: none;
+  }
+}
